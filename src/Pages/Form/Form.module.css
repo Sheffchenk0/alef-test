@@ -11,40 +11,9 @@
     position: relative;
 }
 
-
-/* Input */
-
-.input {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #F1F1F1;
-    border-radius: 4px;
-    padding: 26px 16px 6px;
-    outline: none;
-}
-
-.input:hover {
-    outline: none;
-}
-
-
-/* Button */
-
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    position: absolute;
-    border: 2px solid #01A7FD;
-    box-sizing: border-box;
-    border-radius: 100px;
-    display: flex;
-}
-
-.button_regular {
-    background-color: #ffffff;
-    color: #01A7FD;
+.input_small_wrapper {
+    margin-top: 0px;
+    position: relative;
 }
 
 .placeholder {
@@ -52,22 +21,97 @@
     right: 571px;
     top: 8px;
     position: absolute;
-    /* 13 Paragraph 3 */
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
-    /* identical to box height */
     display: flex;
     align-items: center;
-    /* Colors / Gray */
     color: rgba(17, 17, 17, 0.48);
-    z-index: 2000000;
 }
 
 .children__header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
 }
+
+.plus {
+    width: 16.02px;
+    height: 2.29px;
+    border-radius: 138px;
+    background-color: rgba(1, 167, 253, 1);
+    margin-right: 8px;
+    position: relative;
+}
+
+.plus::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 16.02px;
+    height: 2.29px;
+    border-radius: 138px;
+    background-color: rgba(1, 167, 253, 1);
+    transform: rotate(90deg);
+}
+
+.children {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.delete {
+    cursor: pointer;
+    color: rgba(1, 167, 253, 1);
+}
+
+.delete:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 636px) {
+    .children {
+        width: 100%;
+        display: flex;
+    }
+    .delete {
+        margin-top: 5px;
+    }
+    .input_small_wrapper {
+        width: 50%;
+        padding: 0px 5px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .input_small_wrapper {
+        width: 100%;
+        margin: 5px 0px;
+        padding: 0px;
+    }
+    .delete {
+        margin-top: 0px;
+    }
+    .plus {
+        width: 10px;
+        height: 2px;
+        margin-right: 5px;
+    }
+    .plus::after {
+        width: 10px;
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 320px) {}

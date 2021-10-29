@@ -1,0 +1,26 @@
+/* Input */
+
+.input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    padding: 26px 16px 6px;
+    outline: none;
+}
+
+.input:hover {
+    outline: none;
+}
+
+.small {
+    width: 260px;
+    margin-right: 18px;
+}
+
+@media screen and (max-width: 636px) {
+    .small {
+        width: 100%;
+        margin-right: 18px;
+    }
+}

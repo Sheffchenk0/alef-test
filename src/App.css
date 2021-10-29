@@ -11,9 +11,18 @@
     color: #000000;
 }
 
+.App {
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
-    padding: 30px 10px 0;
-    width: 616px;
+    padding: 30px 10px 100px;
+    width: 636px;
+    max-width: 100%;
     margin: 0 auto;
-    height: 100px;
 }

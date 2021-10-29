@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -9,7 +9,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       {/* <Provider> */}
-      <App />
+      <Suspense fallback={<div>loading</div>}>
+        <App />
+      </Suspense>
       {/* </Provider> */}
     </BrowserRouter>
   </React.StrictMode>,

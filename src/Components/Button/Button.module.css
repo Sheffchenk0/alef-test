@@ -1,0 +1,35 @@
+/* Button */
+
+.button {
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #01A7FD;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.regular {
+    background-color: #ffffff;
+    color: #01A7FD;
+}
+
+.filled {
+    background-color: rgba(1, 167, 253, 1);
+    color: #ffffff;
+}
+
+.filled:hover {
+    background-color: rgb(0, 141, 211);
+    border: 2px solid rgb(0, 141, 211);
+}
+
+@media screen and (max-width: 636px) {
+    .button {
+        padding: 8px 12px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
