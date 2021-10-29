@@ -1,0 +1,73 @@
+.title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.input_wrapper {
+    margin-top: 10px;
+    position: relative;
+}
+
+
+/* Input */
+
+.input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    padding: 26px 16px 6px;
+    outline: none;
+}
+
+.input:hover {
+    outline: none;
+}
+
+
+/* Button */
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    border: 2px solid #01A7FD;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+}
+
+.button_regular {
+    background-color: #ffffff;
+    color: #01A7FD;
+}
+
+.placeholder {
+    left: 16px;
+    right: 571px;
+    top: 8px;
+    position: absolute;
+    /* 13 Paragraph 3 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    /* Colors / Gray */
+    color: rgba(17, 17, 17, 0.48);
+    z-index: 2000000;
+}
+
+.children__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
