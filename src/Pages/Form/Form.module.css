@@ -11,11 +11,6 @@
     position: relative;
 }
 
-.input_small_wrapper {
-    margin-top: 0px;
-    position: relative;
-}
-
 .placeholder {
     left: 16px;
     right: 571px;
@@ -60,49 +55,19 @@
     transform: rotate(90deg);
 }
 
-.children {
-    margin-top: 21px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.delete {
-    cursor: pointer;
-    color: rgba(1, 167, 253, 1);
-}
-
-.delete:hover {
-    text-decoration: underline;
-}
-
 .submit {
     margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 636px) {
-    .children {
-        width: 100%;
-        display: flex;
-    }
-    .delete {
-        margin-top: 5px;
-    }
-    .input_small_wrapper {
-        width: 50%;
-        padding: 0px 5px;
-    }
+.error {
+    color: red;
+    margin-left: 10px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 430px) {
-    .input_small_wrapper {
-        width: 100%;
-        margin: 5px 0px;
-        padding: 0px;
-    }
-    .delete {
-        margin-top: 0px;
-    }
     .plus {
         width: 10px;
         height: 2px;
@@ -113,5 +78,3 @@
         height: 2px;
     }
 }
-
-@media screen and (max-width: 320px) {}

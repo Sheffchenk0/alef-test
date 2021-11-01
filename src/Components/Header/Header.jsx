@@ -13,17 +13,9 @@ export default function Header() {
           { value: 'Превью', href: '/preview' },
         ]}
       />
-      <div className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         <img src={logo} alt="logo" />
-      </div>
-      {/* <nav className={styles.nav}>
-        <Link to="/" className={styles.item}>
-          Форма
-        </Link>
-        <Link to="/preview" className={styles.item}>
-          Превью
-        </Link>
-      </nav> */}
+      </Link>
     </header>
   );
 }
