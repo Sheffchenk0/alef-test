@@ -1,8 +1,8 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Input.module.css';
 
-export default function Input({ small, name, register, ...otherProps }) {
+export default memo(function Input({ small, name, register, ...otherProps }) {
   if (typeof register !== 'function') {
     register = () => {};
   }
@@ -14,4 +14,4 @@ export default function Input({ small, name, register, ...otherProps }) {
       {...register(name)}
     />
   );
-}
+});

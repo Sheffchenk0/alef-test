@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Header.module.css';
 import logo from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import Burger from '../Burger/Burger';
 
-export default function Header() {
+export default memo(function Header() {
   return (
     <header className={styles.header}>
       <Burger
@@ -18,4 +18,4 @@ export default function Header() {
       </Link>
     </header>
   );
-}
+});

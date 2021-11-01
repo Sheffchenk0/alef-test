@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { memo, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../Input/Input';
 import styles from './Child.module.css';
 
-export default function Child({ id, onChange, onDelete }) {
+export default memo(function Child({ id, onChange, onDelete }) {
   const { register, watch } = useForm();
   const watchAllFields = watch();
   useEffect(() => {
@@ -24,4 +24,4 @@ export default function Child({ id, onChange, onDelete }) {
       </div>
     </div>
   );
-}
+});
