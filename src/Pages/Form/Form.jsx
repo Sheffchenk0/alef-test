@@ -70,10 +70,12 @@ export default function Form() {
       </div>
       <div className={styles.children__header}>
         <div className={styles.title}>Дети (макс. 5)</div>
-        <Button regular onClick={onAdd}>
-          <div className={styles.plus}></div>
-          Добавить ребёнка
-        </Button>
+        {children?.length < 5 && (
+          <Button regular onClick={onAdd}>
+            <div className={styles.plus}></div>
+            Добавить ребёнка
+          </Button>
+        )}
       </div>
       {children?.length &&
         children.map((el) => {
